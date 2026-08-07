@@ -1,0 +1,6 @@
+{
+  "name": "Saraswati Realcon",
+  "description": "Real estate services and custom building in Odisha, India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
