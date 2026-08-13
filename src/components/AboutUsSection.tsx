@@ -7,7 +7,6 @@ import {
   CheckCircle2, 
   Compass, 
   Briefcase, 
-  Sparkles, 
   ArrowRight,
   HardHat,
   FileCheck,
@@ -221,10 +220,6 @@ export default function AboutUsSection({ onScheduleVisit }: { onScheduleVisit?: 
         <div className="bg-gradient-to-br from-slate-900 via-slate-950 to-blue-950 rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden shadow-xl border border-slate-800">
           <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="max-w-2xl text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs font-mono font-bold mb-4 border border-blue-500/30">
-                <Sparkles className="w-3.5 h-3.5 text-blue-400" />
-                <span>ORERA Regd. No: RP/19/2021/00542</span>
-              </div>
               <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-white mb-3">
                 Ready to Discuss Your Property & Home Building Requirements?
               </h3>

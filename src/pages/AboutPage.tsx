@@ -1,6 +1,6 @@
 import AboutUsSection from '../components/AboutUsSection';
 import Testimonials from '../components/Testimonials';
-import { ShieldCheck, Award, MapPin, Building2, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Award, MapPin, Building2, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function AboutPage({ onScheduleVisit }: { onScheduleVisit: () => void }) {
@@ -10,10 +10,6 @@ export default function AboutPage({ onScheduleVisit }: { onScheduleVisit: () => 
       <div className="bg-gradient-to-b from-slate-900 to-slate-950 py-16 border-b border-slate-800 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/10 border border-blue-500/30 rounded-full text-blue-400 text-xs font-mono font-bold mb-4">
-              <ShieldCheck className="w-4 h-4" />
-              <span>ORERA Registered Developer • Reg No: ORERA/BBSR/2024/0981</span>
-            </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold tracking-tight text-white mb-6 leading-tight">
               About Saraswati Realcon <br />
               <span className="text-blue-500">Pvt. Ltd.</span>
