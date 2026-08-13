@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, ArrowRight, ShieldCheck } from 'lucide-react';
+import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Footer({ onScheduleVisit }: { onScheduleVisit?: () => void }) {
@@ -36,12 +36,7 @@ export default function Footer({ onScheduleVisit }: { onScheduleVisit?: () => vo
             Odisha's premier real estate development & custom construction company. Specializing in 100% Vastu compliant custom home builds, clear title land plots, and luxury flat sales.
           </p>
 
-          <div className="p-4 bg-slate-900 rounded-2xl border border-slate-800 text-sm text-slate-300 font-mono space-y-1 mb-6">
-            <div className="flex items-center gap-1.5 text-emerald-400 font-bold">
-              <ShieldCheck className="w-4 h-4" /> ORERA Regd. Developer
-            </div>
-            <div>Registration No: ORERA/BBSR/2024/0981</div>
-          </div>
+
 
           <button
             onClick={onScheduleVisit}
