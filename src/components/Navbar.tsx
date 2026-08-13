@@ -1,4 +1,4 @@
-import { Menu, X, PhoneCall } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
@@ -18,20 +18,15 @@ export default function Navbar({ onConsultNow }: { onConsultNow?: () => void }) 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-slate-200 text-slate-900 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 h-22 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3 cursor-pointer py-1">
-          <div className="h-14 sm:h-16 w-auto max-w-[220px] rounded-lg overflow-hidden flex items-center justify-center shrink-0">
-            <img 
-              src="/Saraswati-logo.jpeg" 
-              alt="Saraswati Realcon Logo"
-              className="h-14 sm:h-16 w-auto object-contain scale-105"
-              onError={(e) => {
-                (e.target as HTMLImageElement).style.display = 'none';
-                if (e.currentTarget.parentElement) {
-                  e.currentTarget.parentElement.innerHTML = '<div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white font-heading text-xl font-bold">S</div>';
-                }
-              }}
-            />
-          </div>
+        <Link to="/" className="flex items-center cursor-pointer py-1.5 group shrink-0">
+          <img 
+            src="/Saraswati-Realcon-Web-Logo.png" 
+            alt="Saraswati Realcon Logo"
+            className="h-14 sm:h-16 md:h-18 w-auto object-contain shrink-0 transition-transform duration-200 group-hover:scale-105"
+            onError={(e) => {
+              (e.target as HTMLImageElement).style.display = 'none';
+            }}
+          />
         </Link>
         
         <div className="hidden lg:flex items-center gap-5 xl:gap-7 font-heading text-base font-semibold">
@@ -54,13 +49,6 @@ export default function Navbar({ onConsultNow }: { onConsultNow?: () => void }) 
         </div>
 
         <div className="hidden md:flex items-center gap-4">
-           <a 
-             href="tel:+917008485542"
-             className="text-slate-800 hover:text-blue-600 px-3 py-2 text-base font-semibold flex items-center gap-1.5 font-heading"
-           >
-             <PhoneCall className="w-4 h-4 text-emerald-600 shrink-0" />
-             +91 7008485542
-           </a>
            <button 
              onClick={onConsultNow}
              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-xl text-base font-semibold font-heading transition-all shadow-md shadow-blue-600/20 cursor-pointer"

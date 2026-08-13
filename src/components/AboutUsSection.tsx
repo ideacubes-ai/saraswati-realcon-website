@@ -47,22 +47,22 @@ export default function AboutUsSection({ onScheduleVisit }: { onScheduleVisit?: 
 
   const leadership = [
     {
-      name: 'Er. Rajesh Kumar Mohanty',
-      role: 'Managing Director & Founder',
-      experience: '20+ Yrs Experience',
-      bio: 'Pioneer in Odisha’s real estate development. Former senior structural consultant with a passion for architectural excellence and ethical land development.'
-    },
-    {
-      name: 'Er. Soumya Ranjan Das',
-      role: 'Head of Architecture & Construction',
-      experience: '15+ Yrs Experience',
-      bio: 'Expert structural engineer leading turnkey design, 3D BIM modeling, and rigorous quality inspection across all live project sites.'
-    },
-    {
-      name: 'Adv. Priyadarshini Sahoo',
-      role: 'Chief Legal & Compliance Officer',
+      name: 'Priyadarshini Routray',
+      role: 'Managing Director',
       experience: '12+ Yrs Experience',
-      bio: 'Specializing in Odisha land laws, ORERA clearances, revenue record verification, and smooth property registration for homebuyers.'
+      bio: 'Experienced real estate leader driving strategic direction, corporate growth, brand vision, and ethical property acquisition across Odisha with uncompromised quality.'
+    },
+    {
+      name: 'Jagadish Mohapatra',
+      role: 'Director',
+      experience: '20+ Yrs Experience',
+      bio: 'Two decades of proven expertise in large-scale residential developments, land procurement, regulatory compliance, and project execution across Bhubaneswar & Cuttack.'
+    },
+    {
+      name: 'Manas Ranjan Sahoo',
+      role: 'Chief Executive Officer (CEO)',
+      experience: '24+ Yrs Experience',
+      bio: 'Over 24 years of executive leadership in construction management, operational strategy, corporate governance, and delivering exceptional customer experiences.'
     }
   ];
 
@@ -188,7 +188,7 @@ export default function AboutUsSection({ onScheduleVisit }: { onScheduleVisit?: 
               Guided by Technical Excellence
             </h3>
             <p className="text-slate-600 text-sm sm:text-base">
-              Our executive board brings together decades of civil engineering, legal mastery, and architectural innovation.
+              Our executive board brings together decades of real estate expertise, strategic management, and turnkey construction leadership across Odisha.
             </p>
           </div>
 
@@ -197,7 +197,7 @@ export default function AboutUsSection({ onScheduleVisit }: { onScheduleVisit?: 
               <div key={idx} className="bg-white rounded-2xl border border-slate-200/90 p-6 shadow-xs hover:shadow-md transition-all">
                 <div className="flex items-center justify-between mb-4">
                   <div className="w-12 h-12 bg-blue-600/10 text-blue-600 rounded-xl flex items-center justify-center font-heading font-extrabold text-xl">
-                    {person.name.split(' ')[1]?.[0] || 'S'}
+                    {person.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
                   </div>
                   <span className="text-[11px] font-mono font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full border border-blue-100">
                     {person.experience}

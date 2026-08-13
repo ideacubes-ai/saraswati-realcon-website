@@ -19,17 +19,14 @@ export default function Footer({ onScheduleVisit }: { onScheduleVisit?: () => vo
         {/* Brand column */}
         <div className="lg:col-span-5 relative">
           <div className="mb-6">
-            <Link to="/" className="inline-block">
-              <div className="h-16 sm:h-20 w-auto max-w-[260px] rounded-xl overflow-hidden flex items-center shrink-0 bg-white/5 p-1 border border-slate-800">
+            <Link to="/" className="inline-block group">
+              <div className="h-18 sm:h-22 w-auto rounded-xl overflow-hidden flex items-center shrink-0 bg-white p-2.5 shadow-xs border border-slate-200">
                 <img 
-                  src="/Saraswati-logo.jpeg" 
+                  src="/Saraswati-Realcon-Web-Logo.png" 
                   alt="Saraswati Realcon Logo"
-                  className="h-full w-auto object-contain rounded-lg"
+                  className="h-full w-auto object-contain"
                   onError={(e) => {
                     (e.target as HTMLImageElement).style.display = 'none';
-                    if (e.currentTarget.parentElement) {
-                      e.currentTarget.parentElement.innerHTML = '<span class="text-white font-heading text-2xl font-bold px-3 py-1">Saraswati Realcon</span>';
-                    }
                   }}
                 />
               </div>
